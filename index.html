@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Impact of Cryptocurrencies</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap" rel="stylesheet"> <!-- Link to Google Fonts -->
+    <script src="script.js" defer></script> <!-- Link to external JavaScript file -->
+    <style>
+        /* Additional CSS for radio button navigation */
+        #section-navigation {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        #section-navigation input[type="radio"] {
+            display: none;
+        }
+
+        #section-navigation label {
+            background-color: #FF9800; /* Orange */
+            color: #ffffff;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        #section-navigation label:hover {
+            background-color: #F57C00; /* Darker shade of orange on hover */
+        }
+
+        #section-navigation input[type="radio"]:checked + label {
+            background-color: #F57C00; /* Darker shade of orange for active radio button */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Global Impact of Cryptocurrencies</h1> <!-- Main title -->
+        <nav id="section-navigation">
+            <input type="radio" name="section" id="radio-decentralization" value="#decentralization" checked>
+            <label for="radio-decentralization">Decentralization</label>
+
+            <input type="radio" name="section" id="radio-blockchain-technology" value="#blockchain-technology">
+            <label for="radio-blockchain-technology">Blockchain Technology</label>
+
+            <input type="radio" name="section" id="radio-economic-impact" value="#economic-impact">
+            <label for="radio-economic-impact">Economic Impact</label>
+
+            <input type="radio" name="section" id="radio-regulatory-challenges" value="#regulatory-challenges">
+            <label for="radio-regulatory-challenges">Regulatory Challenges</label>
+
+            <input type="radio" name="section" id="radio-currency-converter" value="#currency-converter">
+            <label for="radio-currency-converter">Currency Converter</label>
+
+            <input type="radio" name="section" id="radio-relevant-images" value="#relevant-images">
+            <label for="radio-relevant-images">Relevant Images</label>
+        </nav>
+    </header>
+    <main>
+        <section id="decentralization">
+            <h2>Decentralization</h2>
+            <p>Cryptocurrencies operate without a central authority, such as a government or a bank. Instead, they rely on a decentralized network of computers to validate and record transactions. This decentralized nature ensures that no single entity has control over the currency, making it resistant to censorship and manipulation.</p>
+        </section>
+        <section id="blockchain-technology">
+            <h2>Blockchain Technology</h2>
+            <p>Blockchain is the underlying technology behind cryptocurrencies, serving as a distributed ledger that records all transactions across a network of computers. Each block in the blockchain contains a cryptographic hash of the previous block, creating a secure and tamper-proof chain of transaction history. This transparency and security provided by blockchain technology ensure trust and integrity in cryptocurrency transactions.</p>
+        </section>
+        <section id="economic-impact">
+            <h2>Economic Impact</h2>
+            <p>Cryptocurrencies have significant effects on global transactions, including remittances and investments. By enabling borderless and low-cost transactions, cryptocurrencies reduce the need for intermediaries and traditional banking systems, thus lowering transaction fees and speeding up settlement times. Additionally, cryptocurrencies have the potential to empower unbanked populations by providing access to financial services and enabling participation in the global economy.</p>
+        </section>
+        <section id="regulatory-challenges">
+            <h2>Regulatory Challenges</h2>
+            <p>Cryptocurrencies face various challenges in terms of regulation and acceptance by governments. Regulatory frameworks often struggle to keep pace with the rapid evolution of cryptocurrencies, leading to legal uncertainties and security concerns. Additionally, governments and financial institutions may view cryptocurrencies as a threat to monetary sovereignty and traditional financial systems, resulting in resistance to their adoption and integration into mainstream finance.</p>
+        </section>
+        <section id="currency-converter">
+            <h2>Currency Converter</h2>
+            <form id="currencyConverter"> <!-- Form for currency conversion -->
+                <label for="amount">Amount:</label> <!-- Input label -->
+                <input type="number" id="amount" name="amount" required> <!-- Input field for amount -->
+                <label for="currency">Currency:</label> <!-- Select label -->
+                <select id="currency" name="currency" required> <!-- Dropdown for currency selection -->
+                    <option value="USD">USD</option> <!-- Currency options -->
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
+                </select>
+                <label for="cryptoCurrency">Cryptocurrency:</label> <!-- Select label -->
+                <select id="cryptoCurrency" name="cryptoCurrency" required> <!-- Dropdown for cryptocurrency selection -->
+                    <option value="BTC">Bitcoin (BTC)</option> <!-- Cryptocurrency options -->
+                    <option value="ETH">Ethereum (ETH)</option>
+                    <option value="XRP">Ripple (XRP)</option>
+                    <option value="LTC">Litecoin (LTC)</option>
+                </select>
+                <button type="submit">Convert</button> <!-- Submit button -->
+            </form>
+            <div id="result"></div> <!-- Result area -->
+        </section>
+        <section id="relevant-images">
+            <h2>Relevant Images</h2>
+            <div class="image-gallery"> <!-- Image gallery section -->
+                <div class="image">
+                    <img src="https://m.economictimes.com/thumb/msid-79280279,width-1200,height-900,resizemode-4,imgsize-678018/bitcoin.jpg" alt="Bitcoin" width="50" height="60"> <!-- Image with alt description and dimensions -->
+                    <p>Bitcoin - The first and most well-known cryptocurrency</p> <!-- Image caption -->
+                </div>
+                <!-- Additional images with alt descriptions and captions -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="resources">
+            <h3>Cryptocurrency Resources</h3>
+            <ul>
+                <li><a href="https://bitcoin.org/">Bitcoin Official Website</a></li> <!-- Resource links -->
+                <li><a href="https://ethereum.org/">Ethereum Official Website</a></li>
+                <li><a href="https://ripple.com/">Ripple Official Website</a></li>
+                <li><a href="https://litecoin.org/">Litecoin Official Website</a></li>
+            </ul>
+        </div>
+        <div class="disclaimer">
+            <h3>Legal Disclaimer</h3>
+            <p>This website is for informational purposes only and does not constitute financial advice. Cryptocurrency investments are subject to market risks. Visitors are advised to do their own research before investing in cryptocurrencies.</p> <!-- Legal disclaimer -->
+        </div>
+    </footer>
+
+    <script>
+        function scrollToSection() {
+            const selectedSectionId = document.querySelector('input[name="section"]:checked').value;
+            const section = document.getElementById(selectedSectionId.substr(1)); // Remove '#' from id
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
